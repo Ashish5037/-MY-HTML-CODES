@@ -10,22 +10,41 @@
 
 <body>
 
-	<h1><center>CRUD EXAMPLES</center></h1>
+	<h1 id="bg-color"><center>Patient DashBoard</center></h1>
 	<hr size="5">
 			<div class="employee-form">
                 <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
                     <div>
+                        <label for="">Sl No :-</label>
+                        <input type="number" name="slno" id="slno">
+                    </div>
+                    <div>
+
                         <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
                         <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label for="">Age :-</label>
+                        <input type="number" name="Age" id="Age">
+                    </div>
+                    <div>
+                        <label for=""> Gender:-</label>
+                        <input type="text" name="gender" id="gender"> 
+                        <!-- <input type="text" name="gender" value="Female">Female 
+                        <input type="text" name="gender" value="others">Others -->
+                    </div>
+                    <div>
+                        <label for="">Phone No:-</label>
+                        <input type="text" name="phno" id="phno">
                     </div>
                     <div>
                         <label>Email Id :- </label>
                         <input type="text" name="email" id="email">
                     </div>
-                    <div>
+                    <!-- <div>
                         <label>Salary :-</label>
                         <input type="text" name="salary" id="salary">
-                    </div>
+                    </div> -->
                     <div>
                         <label>City :-</label>
                         <input type="text" name="city" id="city">
@@ -40,9 +59,13 @@
                 <table class="list" id="employeeList">
                     <thead>
                         <tr>
+                            <th><u>Sl no</u></th>
                             <th><u> Full Name </u></th>
+                            <th><u>Age</u></th>
+                            <th><u>Gender</u></th>
+                            <th><u>Phno</u></th>
                             <th><u>Email Id</u></th>
-                            <th><u>Salary</u></th>
+                            <!-- <th><u>Salary</u></th> -->
                             <th><u> City</u></th>
                             <th><u>Actions</u></th>
                         </tr>

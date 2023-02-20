@@ -46,7 +46,7 @@ input[type=text], input[type=number] {
     width: 100%;
     padding: 8px 20px;
     margin: 8px 0;
-    display: inline-block;
+    display: flex;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -82,3 +82,11 @@ label.validation-error{
 .hide{
     display:none;
 }
+#bg-color{
+    background-color: lightskyblue;
+    width:fit-content;
+    padding: 5px;
+    background-color: aqua;
+    border-radius: 10px ; 
+    text-align: center;
+    }
