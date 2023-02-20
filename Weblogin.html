@@ -7,24 +7,47 @@
 <body>    
     <h2>Login Page</h2><br>    
     <div class="login">    
-    <form id="login" method="get" action="login.php">    
-        <label><b>User - Name     
+    <form id="login" method="POST" action="Crud.html" >    
+        <label><b>User-Name:    
         </b>    
         </label>    
-        <input type="text" name="Uname" id="Uname" placeholder="Username">    
-        <br><br>    
-        <label><b>Password     
+        <!-- <input type="text" name="Uname" id="Uname" placeholder="Username"> -->
+        <input type="text" id="username" name="username" placeholder="Enter username">
+          <span class="error" id="username-error"></span>    
+        <br><br>  <br> 
+        <label><b>Password:      
         </b>    
         </label>    
-        <input type="Password" name="Pass" id="Pass" placeholder="Password">    
+        <!-- <input type="Password" name="Pass" id="Pass" placeholder="Password">   -->
+        <input type="password" id="password" name="password" placeholder="Enter password">
+        <span class="error" id="password-error"></span>  
+        <br><br>  <br> <br> 
+        <input type="submit" name="log" id="log" value="Submit" onclick="validateForm()"/>       
         <br><br>    
-        <input type="button" name="log" id="log" value="Log In Here">       
-        <br><br>    
-        <input type="checkbox" id="check">    
+        <!-- <input type="checkbox" id="check">    
         <span>Remember me</span>    
         <br><br> <u> Forgot your Username ?</u>   
-       <a href="#">Password</a>    
+       <a href="#">Password</a>      -->
     </form>     
 </div>    
-</body>    
+<script>
+function validateForm() { 
+    var username=document.getElementById("username").value;
+    var password=document.getElementById("password").value;
+    if(username=="Ashish5037" && password=="Televital"){
+    window.location.assign("Crud.html");
+    
+       alert("login successfullly")
+      
+    }
+    else{
+       alert("login failed ")
+       return ;
+    }
+   
+   
+   }
+</script>
+</body> 
+
 </html> 
